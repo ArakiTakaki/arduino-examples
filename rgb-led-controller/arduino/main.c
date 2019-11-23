@@ -12,11 +12,11 @@
 
 int colorChar = 0;
 int serialInputR = 0;
-float rialSerialInputR = 0;
+float rialSerialInputR = 0.1;
 int serialInputG = 0;
-float rialSerialInputG = 0;
+float rialSerialInputG = 0.1;
 int serialInputB = 0;
-float rialSerialInputB = 0;
+float rialSerialInputB = 0.1;
 
 // 初期化
 void setup(){
@@ -63,15 +63,9 @@ void colorPick() {
 // 繰り返し処理
 void loop(){
   colorPick();
-  if ( serialInputR > 0 ) {
-    rialSerialInputR += ((float)serialInputR - rialSerialInputR) * 0.01;
-  }
-  if ( serialInputG > 0 ) {
-    rialSerialInputG += ((float)serialInputG - rialSerialInputG) * 0.01;
-  }
-  if ( serialInputB > 0 ) {
-    rialSerialInputB += ((float)serialInputB - rialSerialInputB) * 0.01;
-  }
+  rialSerialInputR += ((float)serialInputR - rialSerialInputR) * 0.05;
+  rialSerialInputG += ((float)serialInputG - rialSerialInputG) * 0.05;
+  rialSerialInputB += ((float)serialInputB - rialSerialInputB) * 0.05;
   setColor((int)rialSerialInputR, (int)rialSerialInputG, (int)rialSerialInputB);
 }
 
