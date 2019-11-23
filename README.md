@@ -28,5 +28,14 @@
 
 要はベースとやらを使用し、電圧がある無しで、スイッチングができるだけっぽい
 
-## モータ - [L293D](https://iot.keicode.com/arduino/arduino-l293d-dc-motor.php)
+## [L293D](https://iot.keicode.com/arduino/arduino-l293d-dc-motor.php)
+
+モーター汎用ピンらしい。
+
+## [74HC595に関して](https://rephtone.com/electronics/arduino-74hc595/)
+
+デジタル出力で、信号数を分岐させることにより、増やすことが可能となっている。
+
+上記のサンプルでLチカをおこなっているが、HightとLowしかないため、イージングする際はアナログ出力＋トランジスタなどを噛ませてあげると良いきがする。
+
 
