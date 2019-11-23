@@ -1,6 +1,7 @@
 // 変数の定義
 #define LED_PIN 13
- 
+int inputchar;
+
 // 初期化
 void setup(){
   pinMode(LED_PIN, OUTPUT);
@@ -10,7 +11,6 @@ void setup(){
  
 // 繰り返し処理
 void loop(){
-  int inputchar;
 
   // シリアルポートより1文字読み込む
   inputchar = Serial.read();
@@ -19,15 +19,15 @@ void loop(){
       // 読み込みデータが　o の場合
       digitalWrite(LED_PIN, HIGH);
       delay(100);
-
       digitalWrite(LED_PIN, LOW);
+      Serial.println("end of o");
       break;
     case 'p':  
       // 読み込みデータが　p の場合
       digitalWrite(LED_PIN, HIGH);
-      delay(10000);
-
+      delay(1000);
       digitalWrite(LED_PIN, LOW);
+      Serial.println("end of p");
       break;
     default:
       break;
