@@ -40,6 +40,8 @@
 
 ## [ステップモーターに関して](https://novicengineering.com/arduino%E3%81%A7%E3%82%B9%E3%83%86%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%E3%83%A2%E3%83%BC%E3%82%BF%E3%82%92%E5%88%B6%E5%BE%A1%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B/)
 
+- [ライブラリなし版も乗ってる](https://dotstud.io/blog/stepper-motor-nefrybt-control/)
+
 付属品はあまり回ってくれないっぽい
 
 ただ、結構正確っぽいので何かと使えそう。
