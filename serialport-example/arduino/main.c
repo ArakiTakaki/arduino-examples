@@ -1,4 +1,6 @@
-// 変数の定義
+// 抵抗 Resistor120PCS?
+// GND -
+// WMd 13 +
 #define LED_PIN 13
 int inputchar;
 
